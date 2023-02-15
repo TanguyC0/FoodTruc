@@ -1,6 +1,6 @@
 <template>
     <section class="py-10 bg-gray-100">
-        <div class="mx-auto grid max-w-6xl  grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div  class="mx-auto grid max-w-6xl  grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <template v-for="plat in plats">
                 <Carte :plat="plat" />
             </template>
@@ -25,9 +25,8 @@
                 plats.value = response.data.meals;
             })
             .catch(error => {
-                console.log(error)
+                console.log(error);
             })
-        console.log(props.categorie);
     }
     
     getPlats();

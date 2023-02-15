@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div class=" p-10 bg-gray-100">
         <Fiche :idPlat=" $route.query.id " :vue="current" />
     </div>
 </template>

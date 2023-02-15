@@ -1,5 +1,8 @@
 <template>
-    <div class="flex flex-wrap items-center  overflow-x-auto overflow-y-hidden py-10 justify-center   bg-white text-gray-800">
+    <div class="pt-20  bg-white">
+        <h1 class="text-center text-2xl font-bold text-gray-800">Categories</h1>
+    </div>
+    <div class="flex flex-wrap items-center  overflow-x-auto overflow-y-hidden py-10 justify-center  text-gray-800">
         <template v-for="categorie in categories">
             <div rel="noopener noreferrer" class="flex items-center flex-shrink-0 px-5 py-3 space-x-2  text-gray-600 cursor-pointer" @click="current = categorie.strCategory">
                 <span class="font-semibold" :class="{'text-red-500 underline' : current == categorie.strCategory}">{{ categorie.strCategory }}</span>

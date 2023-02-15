@@ -10,7 +10,7 @@
     const plat = ref({});
 
     async function getPlat() {
-        await axios.get(`https:www.themealdb.com/api/json/v1/1/lookup.php?i=${props.idPlat}`)
+        await axios.get(`http:www.themealdb.com/api/json/v1/1/lookup.php?i=${props.idPlat}`)
             .then(response => {
                 plat.value = response.data.meals[0];
             })

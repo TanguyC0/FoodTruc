@@ -40,9 +40,12 @@
                         <h3 class="text-3xl mb-2 font-semibold leading-normal">
                             Ingredients
                         </h3>
-                        <ul class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
+                        <ul class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600 capitalize">
                             <li v-for="i in 20" :key="ingredient">
-                                {{ plat[`strIngredient${i}`] }} - {{ plat[`strMeasure${i}`] }}
+                                <p v-if="plat[`strIngredient${i}`] != '' && plat[`strIngredient${i}`] != null">
+                                    {{ plat[`strIngredient${i}`] }} - {{ plat[`strMeasure${i}`] }}
+                                </p>
+                                
                             </li>
                         </ul>
                     </div>

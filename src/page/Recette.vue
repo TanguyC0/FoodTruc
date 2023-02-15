@@ -7,15 +7,15 @@
 </script>
 
 <template>
-    <div class="pt-32  bg-white">
-        <h1 class="text-center text-2xl font-bold text-gray-800">Recette</h1>
+    <div class="pt-20  bg-white">
+        <h1 class="text-center text-2xl font-bold text-gray-800">Recipe</h1>
     </div>
     <div class="flex flex-wrap items-center  overflow-x-auto overflow-y-hidden py-10 justify-center   bg-white text-gray-800">
-        <div rel="noopener noreferrer" class="flex items-center flex-shrink-0 px-5 py-3 space-x-2  text-gray-600" @click="current = 'ingredient'">
-            <span class="font-semibold" :class="{'text-red-500 underline' : current == 'ingredient'}">ingredient</span>
+        <div rel="noopener noreferrer" class="flex items-center flex-shrink-0 px-5 py-3 space-x-2  text-gray-600 cursor-pointer" @click="current = 'ingredient'">
+            <span class="font-semibold" :class="{'text-red-500 underline' : current == 'ingredient'}">Ingredient</span>
         </div>
-        <div rel="noopener noreferrer" class="flex items-center flex-shrink-0 px-5 py-3 space-x-2  text-gray-600" @click="current = 'instruction'">
-            <span class="font-semibold" :class="{'text-red-500 underline' : current == 'instruction'}">instruction</span>
+        <div rel="noopener noreferrer" class="flex items-center flex-shrink-0 px-5 py-3 space-x-2  text-gray-600 cursor-pointer" @click="current = 'instruction'">
+            <span class="font-semibold" :class="{'text-red-500 underline' : current == 'instruction'}">Instruction</span>
         </div>
     </div>
 

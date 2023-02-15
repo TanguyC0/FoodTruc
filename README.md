@@ -14,8 +14,8 @@ This project is a website that allows you to find recipes and restaurants near y
 
 ## Design
 
-template general : [Link](https://tailwindcomponents.com/component/sopping-cart)
-template recette : [Link](https://tailwindcomponents.com/component/card-feature)
+Template general : [Link](https://tailwindcomponents.com/component/sopping-cart)
+Template recette : [Link](https://tailwindcomponents.com/component/card-feature)
 
 ## constraint for the project
 
@@ -33,8 +33,7 @@ Make a card retrieving data from a public API of your choice, your development m
 
 ## Online
 
-for view the project online : [Link](https://foodtruc.netlify.app/)
-**Note:** Some api calls don't work on the link. Some functionality is therefore not visible.
+For view the project online : [Link](https://foodtruc.netlify.app/)
 
 ## More features to come ?
 

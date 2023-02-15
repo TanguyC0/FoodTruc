@@ -20,7 +20,7 @@
     const plats = ref([]);
 
     async function getPlats() {
-        await axios.get(`http:www.themealdb.com/api/json/v1/1/filter.php?c=${props.categorie}`)
+        await axios.get(`https:www.themealdb.com/api/json/v1/1/filter.php?c=${props.categorie}`)
             .then(response => {
                 plats.value = response.data.meals;
             })

@@ -6,7 +6,7 @@
 
 <template>
 
-    <body class="bg-white">
+    <body class="bg-white min-h-screen flex flex-col justify-between ">
         <!-- Header Navbar -->
         <Hero />
     

@@ -18,7 +18,7 @@
     const emit = defineEmits(['change']);
 
     async function getCategories() {
-        await axios.get('www.themealdb.com/api/json/v1/1/categories.php')
+        await axios.get('https://www.themealdb.com/api/json/v1/1/categories.php')
             .then(response => {
                 categories.value = response.data.categories;
             })

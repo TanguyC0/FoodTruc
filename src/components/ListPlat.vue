@@ -29,9 +29,8 @@
             })
     }
     
-
     getPlats();
 
-    watch(props.categorie, getPlats);
+    watch(() => props.categorie, () => { getPlats() });
 
 </script>
